@@ -9,5 +9,5 @@ ADD start-nginx.sh /tmp/
 VOLUME ["/var/cache/nginx"]
 ENV DOCUMENT_ROOT /www
 EXPOSE 80
-WORKDIR /www
+WORKDIR /tmp
 CMD ["sh","/tmp/start-nginx.sh"]
